@@ -72,5 +72,5 @@ Ce modèle est pour l'instant en beta privée.
 
 Ci-dessous une vidéo de la présentation de la puissance de ce modèle.  
 
-<iframe src="https://player.vimeo.com/video/583550498?loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" data-ready="true"></iframe>
+[![video](https://i.vimeocdn.com/video/1208036385-1fc7f466736a3932f06d863faa0b07b9ee11309edc6df3b1f8c1a577030562c3-d?mw=800&mh=450)](https://player.vimeo.com/video/583550498?loop=1 "Video") 
 
