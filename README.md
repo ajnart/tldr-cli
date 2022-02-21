@@ -8,6 +8,11 @@
 # Introduction
 ## OpenAI
 ![](https://upload.wikimedia.org/wikipedia/fr/thumb/2/2d/OpenAI_Logo_2017.svg/1200px-OpenAI_Logo_2017.svg.png)
+<style type="text/css">
+    img {
+        width: 250px;
+    }
+</style>
 
 OpenAI est une entreprise en intelligence artificielle, basée à San Francisco. Son but est de promouvoir et développer une intelligence artificielle à visage humain qui bénéficiera à toute l'humanité. *(Wikipedia)*
 
@@ -29,4 +34,43 @@ Faisant preuve de la même prudence pour GPT-3, OpenAI a préféré proposer cet
 
 Tout d’abord, nous allons voir comment l’API fonctionne.
 Pour faire des requêtes, il faut utiliser une clé d’API. Pour obtenir une clé d’API, inscrivez vous sur [OpenAI](https://beta.openai.com/signup).
-Vous trouverez une clé d’API dans votre [compte](https://beta.openai.com/account/api-keys).
+Vous pourrez ensuite créer une clé d’API dans votre [compte](https://beta.openai.com/account/api-keys).
+
+![](./assets/secret_key.png)
+
+Une fois la clé d’API créée, vous pouvez utiliser l’API en utilisant l’URL suivante : ``https://api.openai.com/v1/`` suivi de l'engine que vous souhaitez utiliser (text-davinci-001 dans notre cas) et de l'action que vous souhaitez effectuer (completions). 
+
+Un exemple de requêtre Curl :
+```sh
+curl https://api.openai.com/v1/engines/text-davinci-001/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+  "prompt": "Translate this into 1. French, 2. Spanish and 3. Japanese:\n\nWhat rooms do you have available?\n\n1.",
+  "temperature": 0.3,
+  "max_tokens": 100,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}'
+```
+
+# Cli
+Maintenant que nous avons vu l'API, nous allons voir comment créer un cli pour l'utiliser. Vous pouvez utiliser le languge de programmation de votre choix pour cette étape. *Je recommande Python/Javascript.*
+
+Le but de ce CLI de résumer du texte en utilisant l'engine ``text-davinci-001``
+
+Si vous êtes perdus, vous pouvez toujours visiter la page [quickstart tutorial](https://beta.openai.com/docs/quickstart/build-your-application) pour avoir un exemple d'application NodeJS/Python qui utilise l'API.
+
+*Note: GPT-3 comprends le language HUMAIN, n'oubliez donc pas d'inclure ce qu'il doit faire du texte que vous lui passez.*  
+Ex: Explique moi le concept de : ``${input}``
+
+# Codex : L'engine de génération de code à l'aide du language humain.
+
+Utilisé par Microsoft dans GitHub CoPilot, il permet de générer du code de contexte, de language humain ou simplement de résoudre des problèmes simples.  
+Ce modèle est pour l'instant en beta privée.  
+
+Ci-dessous une vidéo de la présentation de la puissance de ce modèle.  
+
+<iframe src="https://player.vimeo.com/video/583550498?loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" data-ready="true"></iframe>
+
