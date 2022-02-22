@@ -8,11 +8,6 @@
 # Introduction
 ## OpenAI
 ![](https://upload.wikimedia.org/wikipedia/fr/thumb/2/2d/OpenAI_Logo_2017.svg/1200px-OpenAI_Logo_2017.svg.png)
-<style type="text/css">
-    img {
-        width: 250px;
-    }
-</style>
 
 OpenAI est une entreprise en intelligence artificielle, basée à San Francisco. Son but est de promouvoir et développer une intelligence artificielle à visage humain qui bénéficiera à toute l'humanité. *(Wikipedia)*
 
