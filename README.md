@@ -60,11 +60,10 @@ Si vous êtes perdus, vous pouvez toujours visiter la page [quickstart tutorial]
 *Note: GPT-3 comprends le language HUMAIN, n'oubliez donc pas d'inclure ce qu'il doit faire du texte que vous lui passez.*  
 Ex: Explique moi le concept de : ``${input}``
 
-# Codex : L'engine de génération de code à l'aide du language humain.
+# Codex : Génération de code
 
-Utilisé par Microsoft dans GitHub CoPilot, il permet de générer du code de contexte, de language humain ou simplement de résoudre des problèmes simples.  
+Utilisé par Microsoft dans GitHub CoPilot, le modèle Codex permet de générer du code à l'aide du contexte, de phrases en language humain (non code) ou simplement de résoudre des problèmes simples à l'aide de code.  
 Ce modèle est pour l'instant en beta privée.  
-
 Ci-dessous une vidéo de la présentation de la puissance de ce modèle.  
 
 [![video](https://i.vimeocdn.com/video/1208036385-1fc7f466736a3932f06d863faa0b07b9ee11309edc6df3b1f8c1a577030562c3-d?mw=800&mh=450)](https://player.vimeo.com/video/583550498?loop=1 "Video") 
